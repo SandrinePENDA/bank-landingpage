@@ -1,6 +1,6 @@
 # A bank landing page with HTML5, CSS3/SCSS, JavaScript
 
-[Watch the page live here](https://www.frontendmentor.io)
+[Watch the page live here](https://sandrinependa.github.io/bank-landingpage)
 
 ## My process 👋
 
