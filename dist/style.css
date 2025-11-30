@@ -1,3 +1,14 @@
+@charset "UTF-8";
+root {
+  --blueGray: #2d314dff;
+  --milkGreen: #32d25dff;
+  --blueSky: #2cb6d8ff;
+  --grayLight: #9698a6ff;
+  --gray100: #f3f4f6ff;
+  --gray50: #fafafaff;
+  --white: rgb(255, 255, 255);
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -15,6 +26,139 @@ body {
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
   line-height: 1.3;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-justcon-between {
+  justify-content: space-between;
+}
+.flex-justcon-center {
+  justify-content: center;
+}
+.flex-aligncon-center {
+  align-items: center;
+}
+
+.dp-none {
+  display: none;
+}
+
+.dp-block {
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+header {
+  height: 80px;
+  background-color: #ffffff;
+}
+
+nav#global-nav {
+  position: relative;
+  padding: 24px;
+}
+
+button#burger {
+  outline: 0;
+  border: none;
+  background-color: transparent;
+}
+
+button#burger.is-open span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(55deg);
+}
+
+button#burger.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+button#burger.is-open span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, 50%) rotate(-55deg);
+}
+
+.is-closed {
+  display: none;
+}
+
+.is-open {
+  display: block;
+}
+
+.burger-bars {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.burger-bars span {
+  width: 26px;
+  height: 3px;
+  background-color: #9698a6;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* État ouvert du bouton */
+.burger-bars span:nth-child(1) {
+  top: 25%;
+}
+
+.burger-bars span:nth-child(3) {
+  top: 75%;
+}
+
+.header__menu {
+  position: absolute;
+  background-color: #fafafa;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 2rem);
+}
+.header__menu li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu li a {
+  color: #9698a6;
+}
+
+.btn-header {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

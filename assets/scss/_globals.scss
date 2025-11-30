@@ -16,3 +16,43 @@ body {
     font-size: 18px;
     line-height: 1.3;
 }
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+//Flexbox
+.flex {
+    display: flex;
+
+    &-col {
+        flex-direction: column;
+    }
+
+    &-justcon-between {
+        justify-content: space-between;
+    }
+
+    &-justcon-center {
+        justify-content: center;
+    }
+
+    &-aligncon-center {
+        align-items: center;
+    }
+
+
+}
+
+//Display block/none
+.dp-none {
+    display: none;
+}
+
+.dp-block {
+    display: block;
+}
